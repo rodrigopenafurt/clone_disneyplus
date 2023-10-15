@@ -1,16 +1,6 @@
 @use 'variaveis';
 
-@font-face {
-    font-family: Avenir;
-    src: url(../../assets/fonts/Avenir-Regular.woff2);
-    font-weight: 400;
-}
 
-@font-face {
-    font-family: Avenir;
-    src: url(../../assets/fonts/Avenir-Bold.woff2);
-    font-weight: 700;
-}
 
 .hero {
     padding: 5.6vw;
@@ -19,6 +9,11 @@
     text-align: center;
     background-size: contain;
     background-repeat: no-repeat;
+
+    .button {
+        margin-top: 2vw;
+        margin-bottom: 8px;
+    }
 
     &__content {
         max-width: 640px;
