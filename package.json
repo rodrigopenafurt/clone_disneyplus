@@ -1,7 +1,6 @@
 {
   "name": "clone_disneyplus",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "gulp watch",
@@ -12,10 +11,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gul": "^1.0.0",
     "gulp": "^4.0.2",
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.1.0",
-    "sass": "^1.68.0",
-    "uglify": "^0.1.5"
-  }
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.67.0"
+  },
+  "description": ""
 }

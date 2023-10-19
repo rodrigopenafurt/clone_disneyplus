@@ -9,11 +9,11 @@
     &__questions {
 
         &__item {
-            background-color: #13151d;
+            background-color: #13151D;
             margin-bottom: 16px;
 
             &__question {
-                color: #fff;
+                color: white;
                 font-size: 20px;
                 padding: 24px;
                 display: block;
@@ -36,18 +36,25 @@
                 height: 0;
                 overflow: hidden;
                 padding: 0 24px;
-                transition: height, .5s ease;
+                transition: height, 0.5s ease;
+
+                p {
+                    margin: 0 0 24px;
+
+                    ul {
+                        padding-left: 40px;
+                    }
+                }
             }
 
             &--is-open {
                 .faq__questions__item__question::after {
-                    content: '-'
+                    content: '-';
                 }
-
                 .faq__questions__item__answer {
                     height: auto;
                     padding-bottom: 24px;
-                    transition: height, .5s ease;
+                    transition: height, 0.5s ease;
                 }
             }
         }

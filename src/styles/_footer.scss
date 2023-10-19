@@ -3,7 +3,6 @@
 .footer {
     padding: 26px 8px;
 
-
     &__container {
         max-width: 1024px;
         width: 100%;
@@ -32,7 +31,6 @@
                 padding: 8px 16px;
                 display: block;
 
-                
                 &:hover {
                     color: variaveis.$corTextoSecundario;
                 }
@@ -48,6 +46,7 @@
 .language-selector {
     display: flex;
     align-items: center;
+
     img {
         height: 18px;
         width: 18px;

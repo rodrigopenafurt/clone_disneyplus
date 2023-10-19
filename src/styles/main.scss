@@ -10,13 +10,13 @@
 @font-face {
     font-family: Avenir;
     src: url(../../assets/fonts/Avenir-Regular.woff2);
-    font-weight: 400;
+    font-weight: normal;
 }
 
 @font-face {
     font-family: Avenir;
     src: url(../../assets/fonts/Avenir-Bold.woff2);
-    font-weight: 700;
+    font-weight: bold;
 }
 
 * {
@@ -27,12 +27,11 @@
     list-style: none;
 }
 
-
 body {
     background-color: variaveis.$corDeFundo;
 }
 
-@mixin text ($fontSize: 16px) {
+@mixin text($fontSize: 16px) {
     font-size: $fontSize;
     line-height: $fontSize + 10px;
     color: variaveis.$corTextoPrincipal;
@@ -57,7 +56,6 @@ body {
     @media (max-width: 768px) {
         @include text(14px);
     }
-
 }
 
 .text--small {
@@ -78,7 +76,7 @@ body {
     @include title(44px);
 
     @media (max-width: 768px) {
-        @include title(15px);
+        @include title(26px);
     }
 }
 
@@ -87,6 +85,15 @@ body {
 
     @media (max-width: 768px) {
         @include title(24px);
+    }
+}
+
+.sub-title {
+    @include title(20px);
+
+    @media (max-width: 768px) {
+        @include title(15px);
+        padding: 0px 26px 0px 0px;
     }
 }
 
@@ -138,7 +145,7 @@ body {
     }
 }
 
-.image-text-section {
+.image-tex-section {
     padding: 5.6vw;
     display: grid;
     grid-template-columns: 1fr 1fr;

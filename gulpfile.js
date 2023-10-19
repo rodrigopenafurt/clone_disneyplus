@@ -4,9 +4,9 @@ const imagemin = require('gulp-imagemin');
 const uglify = require('gulp-uglify');
 
 function scripts() {
-    return gulp.src('./src/scripts/*.s')
-    .pipe(uglify())
-    .pipe(gulp.dest('./dist/js'))
+    return gulp.src('./src/scripts/*.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('./dist/js'));
 }
 
 function styles() {
@@ -22,8 +22,7 @@ function images() {
 }
 
 exports.default = gulp.parallel(styles, images, scripts);
-
 exports.watch = function() {
-    gulp.watch('./src/styles/*.scss', gulp.parallel(styles))
-    gulp.watch('./src/scripts/*.js', gulp.parallel(scripts))
+    gulp.watch('./src/styles/*.scss', gulp.parallel(styles));
+    gulp.watch('./src/scripts/*.js', gulp.parallel(scripts));
 }
